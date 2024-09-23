@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    />
+  </head>
+  <body>
+
+    <header class="header">
+      <a href="#home" class="logo">
+        Muhammad  <span>Helmi</span>
+      </a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#project">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="gradient-btn">Contact Me</button>
+
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi, It's <span>Helmi</span></h1>
+        <h3>I'm a <span>Web Developer</span></h3>
+        <p>
+          I specialize in creating responsive, user-friendly websites with clean and efficient code. My skill set includes HTML, CSS, JavaScript, and backend technologies like Java using Spring framework. I am passionate about solving real-world problems through web applications and continuously improving my skills by learning new tools and technologies.
+        </p>
+        <div class="social-icons">
+          <a href="https://github.com/helmiade" target="_blank">
+            <i class='bx bxl-github'></i>
+          </a>
+          <a href="https://linkedin.com/in/helmiade" target="_blank">
+            <i class='bx bxl-linkedin-square'></i>
+          </a>
+          <a href="https://instagram.com/helmiad16" target="_blank">
+            <i class='bx bxl-instagram-alt'></i>
+          </a>
+        </div>
+        <div class="btn-group">
+          <a href="#" class="btn">Hire</a>
+          <a href="#contact" class="btn">Contact</a>
+        </div>
+      </div>
+
+      <div class="home-img">
+        <img src="image.jpg" alt="">
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="image.jpg" alt="">
+      </div>
+      <div class="about-content">
+        <h2>About <span>Me</span></h2>
+        <p>
+          I specialize in creating responsive, user-friendly websites with clean and efficient code. My skill set includes HTML, CSS, JavaScript, and backend technologies like Java using Spring framework. I am passionate about solving real-world problems through web applications and continuously improving my skills by learning new tools and technologies.
+        </p>
+          <a href="#" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <section class="education" id="education">
+      <h2 class="heading">Education</h2>
+    
+      <div class="timeline-items">
+    
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2017-2020</div>
+          <div class="timeline-content">
+            <h3>Senior High School 01 Jepara</h3>
+            <p>I attended Senior High School 1 Jepara from 2017 to 2020, specializing in Mathematics and Natural Science. I graduated with a strong academic performance, achieving a final study result of 86, demonstrating my dedication and aptitude in analytical and scientific disciplines.</p>
+          </div>
+        </div>
+    
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2020-2024</div>
+          <div class="timeline-content">
+            <h3>Sebelas Maret University</h3>
+            <p>I graduated from Sebelas Maret University with a GPA of 3.54 on a 4.0 scale. During my academic journey, I successfully passed the selection for the Pekan Ilmiah Mahasiswa (PIM) in Sebelas Maret University, showcasing my ability to engage in scientific research. Additionally, I earned the prestigious Merdeka Belajar Kampus Merdeka (MBKM) Grant, further demonstrating my commitment to academic excellence and innovative learning experiences.</p>
+          </div>
+        </div>
+    
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2024-Now</div>
+          <div class="timeline-content">
+            <h3>Enigmacamp</h3>
+            <p>I participated in a 3-month Fullstack Engineer bootcamp at Enigma, where I focused on backend development using Java and the Spring Boot framework. For the frontend, I used React.js, including mobile development with React. Through this program, I gained comprehensive skills in building both web and mobile applications.</p>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+
+    <section class="project" id="project">
+      <h2 class="project">Project</h2>
+      <div class="project-content">
+        <h3>Coming Soon</h3>
+      </div>
+    </section>
+
+    <!-- <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+
+      <form action="#">
+        <div class="input-group">
+          <div class="input-box"> 
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email">
+          </div>
+          <div class="input-box">
+            <input type="number" placeholder="Phone">
+            <input type="text" placeholder="Subject">
+              
+          </div>
+        </div>
+        <div class="input-group-2">
+          <textarea name="" id="" placeholder="Your Massage" cols="30" rows="10"></textarea>
+          <input type="submit" value="Send Massage" class="btn">
+        </div>
+      </form>
+    </section> -->
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+    
+      <form id="contact-form" action="send-email.php" method="post">
+        <div class="input-group">
+          <div class="input-box"> 
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="input-box">
+            <input type="tel" name="phone" placeholder="Phone" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+          </div>
+        </div>
+        <div class="input-group-2">
+          <textarea name="message" placeholder="Your Message" cols="30" rows="10" required></textarea>
+          <input type="submit" value="Send Message" class="btn">
+        </div>
+        <p id="form-message" style="color: var(--main-color); text-align: center;"></p>
+      </form>
+    </section>
+    
+    
+     
+    
+
+    <footer class="footer">
+      <div class="social-icons">
+        <a href="https://github.com/helmiade" target="_blank">
+          <i class='bx bxl-github'></i>
+        </a>
+        <a href="https://linkedin.com/in/helmiade" target="_blank">
+          <i class='bx bxl-linkedin-square'></i>
+        </a>
+        <a href="https://instagram.com/helmiad16" target="_blank">
+          <i class='bx bxl-instagram-alt'></i>
+        </a>
+      </div>
+      <ul class="list">
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+        <li>
+          <a href="#education">Education</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+
+      </ul>
+      <p class="copyright">
+        © Muhammad Helmi Ade Pamungkas | All Rights Reserved
+      </p>
+
+    </footer>
+    
+    
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
